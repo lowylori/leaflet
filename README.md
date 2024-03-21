@@ -5,3 +5,6 @@ Demo using leaflet to create a webmap
 ```
 https://lowylori.github.io/leaflet/samplemap.html
 ```
+```
+https://lowylori.github.io/leaflet/samplemapmarker.html
+```
