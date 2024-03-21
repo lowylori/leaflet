@@ -35,11 +35,11 @@
     var map = new L.map('map', mapOptions);
 
     // create new layer object
-    var layer = new L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png', {
-	    maxZoom: 20,
-	    attribution: '<a href="https://github.com/cyclosm/cyclosm-cartocss-style/releases" title="CyclOSM - Open Bicycle render">CyclOSM</a> | Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    var layer = new L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
+	    attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
+	    maxZoom: 16
     });
-    
+
     // add layer to map
     map.addLayer(layer);
 
@@ -49,6 +49,7 @@
     // add marker to the map
     marker.addTo(map);
   </script>
+  
 </body>
   
 </html>
