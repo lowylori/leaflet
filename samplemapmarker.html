@@ -43,13 +43,21 @@
     // add layer to map
     map.addLayer(layer);
 
+    // Creating a Marker
+    var markerOptions = {
+      title: "Southern Africa Wildlife College",
+      clickable: true
+    }
+
     //create a marker
-    var marker = L.marker([-24.5408, 31.3344]);
+    var marker = L.marker([-24.5408, 31.3344], markerOptions);
+
+    marker.bindPopup('heres a popup').openPopup();
 
     // add marker to the map
     marker.addTo(map);
   </script>
-  
+
 </body>
   
 </html>
